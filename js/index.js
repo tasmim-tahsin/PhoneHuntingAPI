@@ -1,3 +1,5 @@
+let searchText='13';
+
 function searchHandler(isShowAll){
     loading(true);
     const searchField=document.getElementById("searchField");
@@ -30,6 +32,7 @@ const loadPhone= async(searchText,isShowAll)=>{
     displayPhones(phones,isShowAll);
     
 }
+loadPhone(searchText);
 const displayPhones = (phones,isShowAll)=>{
     //console.log(phones);
     const phoneContainer= document.getElementById("phone-container");
@@ -63,9 +66,9 @@ const displayPhones = (phones,isShowAll)=>{
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">${phone.phone_name}</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p>There are many variations of passages of available, but the majority have suffered</p>
                       <div class="card-actions">
-                        <button onclick="showDetailsHandler('${phone.slug}')" class="btn btn-primary">Show Details</button>
+                        <button onclick="showDetailsHandler('${phone.slug}')" class="btn btn-primary text-white">Show Details</button>
                       </div>
                     </div>
 
